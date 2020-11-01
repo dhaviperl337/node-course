@@ -1,0 +1,16 @@
+title: Node
+description: Node As a sending machine for newletter and public websites feeds
+template:
+  repo: node-template
+  name: node
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
